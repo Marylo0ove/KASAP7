@@ -1,12 +1,19 @@
-.background-desktop{
-    background-image: url("../assets/IMGbackground.png");
+.banner{
     height: 223px;
     border-radius: 25px;
     margin-left: 100px;
     margin-right: 100px;
     object-fit: cover;
-    
- 
+  }
+
+  .banner-image{
+    background-image: url("../assets/IMGbackground.png");
+  }
+
+  .banner-ap-image{
+    background-image: url("../assets/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   
   .home-title{
@@ -16,5 +23,4 @@
     border-radius: 25px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
-
   }
