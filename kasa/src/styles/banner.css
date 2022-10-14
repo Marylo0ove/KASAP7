@@ -1,0 +1,20 @@
+.background-desktop{
+    background-image: url("../assets/IMGbackground.png");
+    height: 223px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    object-fit: cover;
+    
+ 
+  }
+  
+  .home-title{
+    padding-top: 90px;
+    color: white;
+    height: 133px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+
+  }
