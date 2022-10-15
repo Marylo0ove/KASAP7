@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px){
+    .rating{
+        height: 15px;
+        width: 15px;
+    }
+}

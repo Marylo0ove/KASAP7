@@ -10,7 +10,7 @@ const Collapse = () => {
     const [isOpen, setIsOpen] = useState(false)
     return isOpen ?(
         <div>
-            {textsList.map((propos) => (
+            {textsList.map((propos, i) => (
                 <p key={propos.id}>
         <div className='collapse' onClick={() => setIsOpen(false)}>
             <h2 className='collapse-text'>{propos.title} Ouvert</h2>

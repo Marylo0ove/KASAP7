@@ -22,9 +22,6 @@ const Card = () => {
             
         ))}
         </ul>
-        /*<div className='card'>
-            <h2 className='card-title'>Titre de la location</h2>
-        </div>*/
     );
 };
 

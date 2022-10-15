@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
+    cursor: pointer;
 }
 
 .collapse-text{
@@ -40,6 +40,20 @@ margin-left: 180px;
     transition: all 0,5s cubic-bezier(1, 0, 1, 0);
 }
 
+.equipements{
+    width: 550px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 33px;
+}
+
+.description-logement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 @media screen and (max-width: 767px){
 .collapse{
     margin-left: 20px;
@@ -48,9 +62,19 @@ margin-left: 180px;
     .collapse-text{
         font-size: 13px;
     }
+    .collapse-arrow{
+        height: 15px;
+        width: 9px;
+        }
     .collapse-description{
         font-size: 12px;
         margin-left: 20px;
     margin-right: 20px;
+    }
+    .equipements{
+        width: 335px;
+    }
+    .description-logement{
+        flex-direction: column;
     }
 }
