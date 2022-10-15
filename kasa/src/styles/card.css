@@ -41,3 +41,20 @@ margin-top: 40px;
 margin-left: 100px;
     margin-right: 100px;
  }
+
+ @media screen and (max-width: 767px){
+    .list{
+        margin-left: 20px;
+        margin-right: 20px; 
+        background: white; 
+    }
+    .card{
+        width: 335px;
+        height: 255px;
+    }
+    .card-image{
+        width: 335px;
+        height: 255px;
+
+    }
+ }
