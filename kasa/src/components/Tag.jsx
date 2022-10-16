@@ -1,17 +1,17 @@
-import React from 'react';
-import "../styles/tag.css"
-import { logementsList } from '../data.js';
+import React from "react";
+import "../styles/tag.css";
+import { logementsList } from "../data.js";
 
 const Tag = () => {
-    return (
-        <div className='tags'>
-            {logementsList.map((logement) => (
-        <div key={logement.tags} className='tag'>
-            {logement.tags}
+  return (
+    <div className="tags">
+      {logementsList.map((logement) => (
+        <div key={logement.tags} className="tag">
+          {logement.tags}
         </div>
-            ))}
-        </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Tag;
