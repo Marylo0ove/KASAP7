@@ -5,34 +5,41 @@ import vector from "../assets/Vector.svg";
 import { textsList } from "../texts";
 
 const Collapse = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return isOpen ? (
+  const [isOpen, setIsOpen] = useState(-1);
+
+  function toggleCollapse(index) {
+    if (index === isOpen) {
+      setIsOpen(-1);
+      return;
+    }
+    setIsOpen(index);
+  }
+  return (
     <div>
-      {textsList.map((propos, i) => (
-        <p key={propos.id}>
-          <div className="collapse" onClick={() => setIsOpen(false)}>
-            <h2 className="collapse-text">{propos.title} Ouvert</h2>
-            <img
-              src={vector}
-              alt="flêche dirigée vers le haut"
-              className="collapse-arrow"
-            />
+      {textsList.map((propos, index) => (
+        <div key={index}>
+          <div className="collapse" onClick={() => toggleCollapse(index)}>
+            <h2 className="collapse-text ">{propos.title}</h2>
+            <div>
+              <img
+                src={vector}
+                alt="flèche"
+                className={
+                  isOpen === index
+                    ? "collapse-arrow collapse-arrow-turn"
+                    : "collapse-arrow"
+                }
+              />
+            </div>
           </div>
-          <div className="collapse-description">
+          <div
+            className={
+              isOpen === index ? "collapse-description" : "display-none"
+            }
+          >
             <p>{propos.description}</p>
           </div>
-        </p>
-      ))}
-    </div>
-  ) : (
-    <div>
-      {textsList.map((propos) => (
-        <p key={propos.id}>
-          <div className="collapse" onClick={() => setIsOpen(true)}>
-            <h2 className="collapse-text">{propos.title}</h2>
-            <img src={vector} alt="flêche dirigée vers le bas" />
-          </div>
-        </p>
+        </div>
       ))}
     </div>
   );

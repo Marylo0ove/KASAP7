@@ -7,7 +7,6 @@
   height: 340px;
   margin: 27px 25px;
   border-radius: 10px;
-  background-color: #ff6060;
 }
 
 .card-image {
@@ -45,6 +44,17 @@
   margin-right: 100px;
 }
 
+.degrade {
+  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+  padding-top: 340px;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 767px) {
   .list {
     margin-left: 20px;
@@ -58,5 +68,9 @@
   .card-image {
     width: 335px;
     height: 255px;
+  }
+
+  .degrade :hover {
+    visibility: visible;
   }
 }

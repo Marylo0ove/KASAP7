@@ -20,6 +20,7 @@ const Card = () => {
               <div className="card-subtitle">
                 <h2 className="card-title">{logement.title}</h2>
               </div>
+              <span className="degrade"></span>
             </div>
           </Link>
         </li>

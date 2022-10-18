@@ -1,36 +1,52 @@
-.banner{
-    height: 223px;
-    border-radius: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
-    object-fit: cover;
-  }
+.banner {
+  height: 223px;
+  border-radius: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+}
 
-  .banner-image{
-    background-image: url("../assets/IMGbackground.png");
-  }
+.banner-image {
+  background-image: url("../assets/IMGbackground.png");
+}
 
-  .banner-ap-image{
-    background-image: url("../assets/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  
-  .home-title{
-    padding-top: 90px;
-    color: white;
-    height: 133px;
-    border-radius: 25px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  @media screen and (max-width: 767px){
-    .banner{
-        margin-left: 20px;
+.banner-ap-image {
+  background-image: url("../assets/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.home-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+  padding-top: 90px;
+  color: white;
+  height: 133px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .banner {
+    margin-left: 20px;
     margin-right: 20px;
-    }
-    .banner-ap-image{
-        background-image: url("../assets/IMG-AP-m.png");
-       
-      }
   }
+  .banner-ap-image {
+    background-image: url("../assets/IMG-AP-m.png");
+  }
+
+  .display {
+    display: block;
+  }
+
+  .home-title {
+    text-align: start;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+}

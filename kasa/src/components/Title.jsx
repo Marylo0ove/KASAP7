@@ -5,16 +5,20 @@ import { useParams } from "react-router-dom";
 
 const Title = () => {
   const params = useParams();
-  const logementId = JSON.stringify(params);
+  const logementId = params.id;
+  console.log(params);
+  console.log(logementId);
+
   return (
     <div className="title">
-      {logementsList.map((logement) => (
-        <div key={logement.id}>
-          <h1 className="title">{logement.title}</h1>
-          <p>{logementId}</p>
-          <p className="location">{logement.location}</p>
-        </div>
-      ))}
+      {logementsList
+        .filter((logement) => logement.id === logementId)
+        .map((logementFiltre) => (
+          <div key={logementFiltre}>
+            <h1 className="title">{logementFiltre.title}</h1>
+            <p className="location">{logementFiltre.location}</p>
+          </div>
+        ))}
     </div>
   );
 };
