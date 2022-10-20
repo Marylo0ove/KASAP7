@@ -1,0 +1,57 @@
+.banner {
+  height: 223px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.banner-home {
+  margin-top: 0px;
+}
+
+.banner-image {
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+
+  color: white;
+  height: 133px;
+  text-align: center;
+  position: relative;
+  bottom: 175px;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 111px;
+  }
+  .banner-image {
+    border-radius: 10px;
+  }
+
+  .home-title {
+    text-align: start;
+    padding-left: 20px;
+    font-size: 24px;
+    margin-left: 15px;
+    bottom: 90px;
+  }
+
+  .display {
+    display: block;
+  }
+}

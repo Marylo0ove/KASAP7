@@ -7,6 +7,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a {
+  text-decoration: none;
+  color: #ff6060;
+}
+
+li {
+  display: flex;
+}
+
+ul {
+  padding-left: 0;
+}
 
 code {
   font-family: "Montserrat";
