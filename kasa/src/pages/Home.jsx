@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Banner from "../components/Banner/Banner.tsx";
-import Card from "../components/Card/Card.tsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Card from "../components/Card/Card";
 import data from "../logements.json";
 import { Link } from "react-router-dom";
 import photo from "../assets/photo-banner.png";

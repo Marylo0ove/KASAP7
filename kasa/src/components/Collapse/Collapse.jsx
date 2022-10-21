@@ -1,14 +1,10 @@
 import React from "react";
-import { useCollapse } from "./Collapse.hook.tsx";
+import { useState } from "react";
+import { useCollapse } from "./Collapse.hook";
 import "./collapse.css";
 import vector from "../../assets/Vector.svg";
 
-export interface CollapseProps {
-  title: string;
-  content?: string;
-  contents?: string[];
-}
-const Collapse = (props: CollapseProps) => {
+const Collapse = (props) => {
   const h = useCollapse(props);
 
   return (

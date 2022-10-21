@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { StarRatingProps } from "./StarRating";
 
-export const useStarRating = (props: StarRatingProps) => {
-  const [emptyStars, setEmptyStar] = useState<number>(0);
-  const [rating, setRating] = useState<boolean[]>([]);
+export const useStarRating = (props) => {
+  const [emptyStars, setEmptyStar] = useState(0);
+  const [rating, setRating] = useState([]);
 
   useEffect(() => {
     setEmptyStar(5 - props.score);

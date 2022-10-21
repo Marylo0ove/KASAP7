@@ -1,13 +1,13 @@
 import React from "react";
 import "./card.css";
 import "../../logements.json";
-import { useCard } from "./Card.hook.tsx";
 
-export interface CardProps {
-  cardTitle?: string;
-  cardImage: string;
-}
-const Card = (props: CardProps) => {
+const Card = (props) => {
+  const useCard = (props) => {
+    return {
+      ...props,
+    };
+  };
   const h = useCard(props);
 
   return (

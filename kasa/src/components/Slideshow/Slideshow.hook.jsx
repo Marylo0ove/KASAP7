@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { CarouselProps } from "./Slideshow";
-export const useCarousel = (props: CarouselProps) => {
-  const [displayArrows] = useState<boolean>(props.pictures.length > 1);
-  const [picIndex, setPicIndex] = useState<number>(-1);
-  const [picUrl, setPicUrl] = useState<string>();
+
+export const useCarousel = (props) => {
+  const [displayArrows] = useState(props.pictures.length > 1);
+  const [picIndex, setPicIndex] = useState(-1);
+  const [picUrl, setPicUrl] = useState();
 
   useEffect(() => {
     setPicIndex(0);

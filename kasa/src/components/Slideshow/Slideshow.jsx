@@ -1,15 +1,11 @@
 import React from "react";
 import "../../logements.json";
 import "./slideshow.css";
-import { useCarousel } from "./Slideshow.hook.tsx";
+import { useCarousel } from "./Slideshow.hook";
 import arrowLeft from "../../assets/VectorLeftSlide.svg";
 import arrowRight from "../../assets/VectorRightSlide.svg";
 
-export interface CarouselProps {
-  pictures: string[];
-}
-
-const Slideshow = (props: CarouselProps) => {
+const Slideshow = (props) => {
   const h = useCarousel(props);
 
   return (
@@ -19,7 +15,9 @@ const Slideshow = (props: CarouselProps) => {
           onClick={() => h.goToPrevious()}
           src={arrowLeft}
           alt="flèche vers la gauche"
-          className="arrow-left"
+          className={
+            props.pictures.length > 1 ? "arrow-left" : "arrow-left invisibility"
+          }
         />
 
         {h.picUrl && (
@@ -29,11 +27,16 @@ const Slideshow = (props: CarouselProps) => {
             alt="displayed image in carousel"
           />
         )}
+
         <img
           onClick={() => h.goToNext()}
           src={arrowRight}
           alt="flèche vers la droite"
-          className="arrow-right"
+          className={
+            props.pictures.length > 1
+              ? "arrow-right"
+              : "arrow-right invisibility"
+          }
         />
       </div>
       <div>

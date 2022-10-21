@@ -1,15 +1,8 @@
 import React from "react";
-import { useBanner } from "./Banner.hook.tsx";
+import { useBanner } from "./Banner.hook";
 import "./banner.css";
 
-export interface BannerProps {
-  className?: string;
-  backgroundImage?: string;
-  heightScale?: number;
-  bannerText?: string;
-  bannerText2?: string;
-}
-const Banner = (props: BannerProps) => {
+const Banner = (props) => {
   const h = useBanner(props);
 
   return (

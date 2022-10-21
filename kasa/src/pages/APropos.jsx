@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Banner from "../components/Banner/Banner.tsx";
-import Collapse from "../components/Collapse/Collapse.tsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Collapse from "../components/Collapse/Collapse";
 import photo from "../assets/photo-banner-AP.png";
 
 const APropos = () => {

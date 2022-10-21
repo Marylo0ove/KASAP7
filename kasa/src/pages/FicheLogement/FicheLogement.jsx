@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import StarRating from "../../components/StarRating/StarRating.tsx";
-import Collapse from "../../components/Collapse/Collapse.tsx";
+import StarRating from "../../components/StarRating/StarRating";
+import Collapse from "../../components/Collapse/Collapse";
 
-import { useAppartment } from "./FicheLogement.hook.tsx";
+import { useAppartment } from "./FicheLogement.hook";
 import "../../logements.json";
 import "../FicheLogement/FicheLogement.css";
-import Slideshow from "../../components/Slideshow/Slideshow.tsx";
+import Slideshow from "../../components/Slideshow/Slideshow.jsx";
 
 const FicheLogement = () => {
   const h = useAppartment();
@@ -24,7 +24,7 @@ const FicheLogement = () => {
                 <p className="location">{h.appartment?.location}</p>
                 <ul className="ul-margin tags">
                   {h.appartment?.tags &&
-                    h.appartment?.tags.map((tag: string) => (
+                    h.appartment?.tags.map((tag) => (
                       <li key={tag} className="tag">
                         {tag}{" "}
                       </li>
@@ -39,7 +39,7 @@ const FicheLogement = () => {
               <img
                 className="host-picture"
                 src={h.appartment?.host.picture}
-                alt="photo de profil de l'hôte"
+                alt="profil de l'hôte"
               />
             </div>
             <div>

@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Error404 from "./pages/Error404";
-import FicheLogement from "./pages/FicheLogement/FicheLogement.tsx";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import APropos from "./pages/APropos";
 
 function App() {
