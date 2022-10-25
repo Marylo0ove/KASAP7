@@ -13,7 +13,8 @@ const Header = () => {
         <ul className="header-nav fw5">
           <NavLink
             className={({ isActive }) => (isActive ? "nav-active" : "")}
-            to="/Home"
+            to="/"
+            end
           >
             <li style={{ listStyle: "none" }}>Accueil</li>
           </NavLink>

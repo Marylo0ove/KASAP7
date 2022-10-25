@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import data from "../../logements.json";
 import { useNavigate } from "react-router-dom";
-
 import { useParams } from "react-router-dom";
 
 export const useAppartment = () => {

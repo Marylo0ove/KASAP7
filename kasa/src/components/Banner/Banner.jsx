@@ -6,14 +6,7 @@ const Banner = (props) => {
   const h = useBanner(props);
 
   return (
-    <div
-      className="banner"
-      style={
-        {
-          // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${h.backgroundImage})`,
-        }
-      }
-    >
+    <div className="banner">
       <img src={h.backgroundImage} alt="" className="banner-image" />
       {h.bannerText && (
         <h1 className="home-title">

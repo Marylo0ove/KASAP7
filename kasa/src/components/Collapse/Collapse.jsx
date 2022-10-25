@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useCollapse } from "./Collapse.hook";
 import "./collapse.css";
 import vector from "../../assets/Vector.svg";
